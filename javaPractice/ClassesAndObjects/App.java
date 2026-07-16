@@ -1,16 +1,25 @@
 public class App{
 
 	public static void main(String[] args){
-		
-		Rectangle rectangle = new Rectangle(5, 10);
-System.out.println("rectangle.width= " + rectangle.getWidth());
-System.out.println("rectangle.length= " + rectangle.getLength());
-System.out.println("rectangle.area= " + rectangle.getArea());
-Cuboid cuboid = new Cuboid(5,10,5);
-System.out.println("cuboid.width= " + cuboid.getWidth());
-System.out.println("cuboid.length= " + cuboid.getLength());
-System.out.println("cuboid.area= " + cuboid.getArea());
-System.out.println("cuboid.height= " + cuboid.getHeight());
-System.out.println("cuboid.volume= " + cuboid.getVolume());	
+	
+		Car car = new Car(8, "Base car");
+System.out.println(car.startEngine());
+System.out.println(car.accelerate());
+System.out.println(car.brake());
+ 
+Mitsubishi mitsubishi = new Mitsubishi(6, "Outlander VRX 4WD");
+System.out.println(mitsubishi.startEngine());
+System.out.println(mitsubishi.accelerate());
+System.out.println(mitsubishi.brake());
+ 
+Ford ford = new Ford(6, "Ford Falcon");
+System.out.println(ford.startEngine());
+System.out.println(ford.accelerate());
+System.out.println(ford.brake());
+ 
+Holden holden = new Holden(6, "Holden Commodore");
+System.out.println(holden.startEngine());
+System.out.println(holden.accelerate());
+System.out.println(holden.brake());
 	}
 }
