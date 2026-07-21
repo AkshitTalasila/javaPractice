@@ -5,9 +5,15 @@ public class App{
 
 	public static void main(String[] args){
 	
-		int[] my_array = {25, 14, 56, 15, 36, 56, 77, 18, 29, 49};
-		Insert insert = new Insert();
-		System.out.println(Arrays.toString(my_array));
-		System.out.println(Arrays.toString(insert.insertElement(my_array,3,54)));
+		int[] my_array = {
+            10789, 2035, 1899, 1456, 2013, 
+            1458, 2458, 1254, 1472, 2365, 
+            1456, 2165, 1457, 2456};
+
+		        System.out.println("Original numeric array : " + Arrays.toString(my_array));
+
+		SecondLargest one = new SecondLargest();
+
+		System.out.println(one.getSecond(my_array));	
 	}
 }
